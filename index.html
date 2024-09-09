@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleblogt</title>
+</head>
+<body>
+    <h1>EVERYDAY GIT</h1>
+    <img src="images/git icon.png" width="100"><h3>What is Git?</h3>
+    <p>Git is a distributed version control system (dVCS). As the name suggests, version control is all about controlling and tracking different versions of a given project. </p>
+    <h3>Version Control System.</h3>
+    <P>A VCS tracks and records changes to any file (or a group of files) allowing you to recall specific iterations later on or as needed. VCSs are sometimes called source code management (SCM) or revision control systems (RCS).
+
+        Version control allows numerous team members to work collaboratively on a project, even if they’re not in the same room or even country. 
+        
+        For example, let’s say you’re a songwriter. You’re busily working at home on a new song you’ve penned, but you’re not quite happy with it. So you decide to collaborate with two other songwriters to tackle the bits that need work.
+        
+        You and the two other songwriters begin making tweaks to the lyrics and the musical score, with each of you working independently. When the other musicians send you their versions of the song, you like some of the changes they made but not all of them.
+        
+        Now imagine that you can see every change in each version of the song, you can test these to see how they sound, and then synchronize the changes you like across versions.
+        
+        This is what Git allows users to do. Individuals can work on a project locally (on their own computers), save any changes that work, then synchronize those changes to a Git repository so others can see their newer version.</P>
+         <p> Other version control Systems include:Beanstalk,Gitlab,Perforce,Mercurial,CVS  among others.Buckle your belt as we delve into<strong><a href="https://git-scm.com/">The Git</a></strong> and <strong><a href="https://github.com/">Git Hub</a></strong>
+          With that said let us learn on how to install this amazing version control system, create a website with it and finally deploy.</p>
+<h2>1. Installing Git</h2>
+<p>let us first of all check whether  we have  GIT installed by running the following commands on our CMD </p>
+<img src="images/install.PNG" width="500">
+<p>If it doesnt exist that means we have to download and install with this quick steps.
+    <h3>Steps to download and install Git on Windows.</h3>
+    <p><h4>Step 1.</h4> First, visit the official website of <a href="https://git-scm.com/" >Git</a> and download the correct version per the system requirements.
+    <img src="images/download.PNG" width="500">
+    <h4>Step 2</h4> Once you download the setup, click and download Git in your system:
+    <img src="images/click.PNG" width="700">
+    <h4>Step 3</h4>After downloading Git, go to the Start Menu and open Git from it. Moreover, you can check the current version of Git by running the following command in the Command Prompt</p>
+    <img src="images/install.PNG" width="500">
+      </p>
+      <h2>2.Configuring git</h2>
+      <p>Open your terminal or commandprompt and configure your username and email by passing the below commands.This details will be used in your commits. </p>
+<img src="images/configure.PNG">
+<h2>3.Initializing a Git Repository</h2>
+<p>A Git repository is a storage space where your project's files and their revision history are kept. Git, a version control system, helps you track changes to your code and collaborate with others.To initialize
+    git you first of all ensure you are in the repository you want to initialize then you run the following command.
+</p>
+<img src="images/init.PNG">
+<h2>4. Adding files to the staging area</h2>
+<p>The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit.You can add your files from the workspace to the staging area. Before adding them you can check if, there exists any untracked file by using the command: <img 
+src="images/status.PNG"></p><p>
+untracked files simply refer to files that are in my directory but are not in the staging area while tracked files are files 
+that are in the staging area.</p>
+<h2>5.Commiting changes</h2>
+<p> A commit in Git is basically a snapshot of your project at a particular point in time. Each commit captures the state of the files in your
+     working directory and includes a unique identifier (a SHA-1 hash), a commit message, and metadata such as the author and timestamp.
+     Suppose if somebody changed something in the file say “a.txt” we need to add those changes in the repository for that we will be using the command git
+      add file_name, and to make a commit we will be using the command.<img src="images/changes.PNG"> The extra time it takes to write a thoughtful commit message as a letter to your potential future self is extremely worthwhile.
+       On large scale projects, documentation is imperative for maintenance.</p>
+       <h2>6.Branches</h2>
+       <p>Branching means diverging from the mainline and continue to work separately without messing with the mainline.When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged. This object also contains the author’s name and email address, the message that you typed, zero parents for the initial commit, one parent for a normal commit, and multiple parents for a commit that results from a merger
+         of two or more branches. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes.
+     </p>
+     <h2>7. Creating a branch</h2>
+     <p>Creating a branch in Git is a common task for managing different lines of development. Here’s how you can create and work with branches:
+        Create a New Branch: Use the git branch command followed by the name you want for the new branch:
+        <img src="images/branch.PNG">
+     </p>
+     <h2>8.Viewing all branches.</h2>
+     <p>To view all branches in git you run the following commands:</p>s
+        <img src="images/view.PNG"> 
+     <p> Inorder to know the branch that is active you check the one that is highlighted with an asterik next to its name.just that 
+        simple.
+     </p>
+     <h2> 9.switching active branches</h2>
+     <p>To switch to a different branch in Git, use the git checkout or git switch command.Replace branch-name with the name of the branch you want to switch to.
+        Make sure to commit or stash any changes in your current branch before switching to avoid losing work</p>
+        <h2>10.Merging a branch.</h2>
+        <p>Switch to the branch you want to merge into,Merge the other branch then Resolve any conflicts (if there are any), 
+            then commit the changes:</p>
+            <img src="images/merging.PNG">
+            <h2>11. Deleting a branch</h2>
+            <P>Delete a branch with git branch -d <branch> . The -d option will delete the branch only if it has already been pushed and merged with the remote branch. Use -D instead if you want to force the branch to be deleted,
+                 even if it hasn't been pushed or merged yet. The branch is now deleted locally.</P>
+                 <P><em>Since you have familiarised with git and some of it most used commands you can make your experience more magical by learning Git Hub.</em></P>
+
+</body>
+</html>
